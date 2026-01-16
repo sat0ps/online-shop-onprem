@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0" version="29.3.2">
+  <diagram name="Platform Architecture Diagram" id="WSh_h0wYuDcr6IfAWBQh">
+    <mxGraphModel dx="1857" dy="2236" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;fillColor=none;" value="&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="600" width="1237.5" x="-80" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;" value="" vertex="1">
+          <mxGeometry height="385" width="905" x="-37.5" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-25" edge="1" parent="1" source="etgGiHGC-lHWXKV4tSpR-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="etgGiHGC-lHWXKV4tSpR-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;" value="ON-PREM SYSTEMS&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="310" x="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-13" edge="1" parent="1" source="etgGiHGC-lHWXKV4tSpR-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="etgGiHGC-lHWXKV4tSpR-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-28" connectable="0" parent="etgGiHGC-lHWXKV4tSpR-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTP&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0071" y="-2" as="geometry">
+            <mxPoint x="3" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="NGINX Ingress Controller" vertex="1">
+          <mxGeometry height="60" width="165" x="343" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-14" edge="1" parent="1" source="etgGiHGC-lHWXKV4tSpR-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="etgGiHGC-lHWXKV4tSpR-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-16" edge="1" parent="1" source="etgGiHGC-lHWXKV4tSpR-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="etgGiHGC-lHWXKV4tSpR-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-32" connectable="0" parent="etgGiHGC-lHWXKV4tSpR-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="gRPC / HTTP (ClusterIP)&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.051" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-17" edge="1" parent="1" source="etgGiHGC-lHWXKV4tSpR-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="etgGiHGC-lHWXKV4tSpR-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-31" connectable="0" parent="etgGiHGC-lHWXKV4tSpR-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="gRPC / HTTP (ClusterIP)&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2434" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-18" edge="1" parent="1" source="etgGiHGC-lHWXKV4tSpR-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="etgGiHGC-lHWXKV4tSpR-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-30" connectable="0" parent="etgGiHGC-lHWXKV4tSpR-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="gRPC / HTTP (ClusterIP)&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2593" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-19" edge="1" parent="1" source="etgGiHGC-lHWXKV4tSpR-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="etgGiHGC-lHWXKV4tSpR-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-33" connectable="0" parent="etgGiHGC-lHWXKV4tSpR-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="gRPC / HTTP (ClusterIP)&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0039" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="frontend" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="catalog" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="checkout" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="payment" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="currency" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-23" edge="1" parent="1" source="etgGiHGC-lHWXKV4tSpR-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="etgGiHGC-lHWXKV4tSpR-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="cart" vertex="1">
+          <mxGeometry height="60" width="120" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-22" edge="1" parent="1" source="etgGiHGC-lHWXKV4tSpR-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" target="etgGiHGC-lHWXKV4tSpR-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="680" />
+              <mxPoint x="330" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-36" connectable="0" parent="etgGiHGC-lHWXKV4tSpR-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="hostPath / local-path&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0047" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="redis-cart" vertex="1">
+          <mxGeometry height="60" width="120" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Persistent Volume" vertex="1">
+          <mxGeometry height="60" width="120" x="910" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;h1&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;b&gt;&lt;span data-start=&quot;216&quot; data-end=&quot;256&quot;&gt;Platform Architecture Diagram&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="80" width="610" x="110" y="-180" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;dashed=1;" value="&amp;nbsp;Kubernetes Cluster" vertex="1">
+          <mxGeometry height="30" width="130" x="-75" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-40" edge="1" parent="1" source="etgGiHGC-lHWXKV4tSpR-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="etgGiHGC-lHWXKV4tSpR-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-41" connectable="0" parent="etgGiHGC-lHWXKV4tSpR-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;nbsp;HTTP / HTTPS (80 / 443)" vertex="1">
+          <mxGeometry relative="1" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User Browser&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="355" y="-90" as="geometry" />
+        </mxCell>
+        <mxCell id="etgGiHGC-lHWXKV4tSpR-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;dashed=1;" value="Online Shop Namespace" vertex="1">
+          <mxGeometry height="30" width="160" x="-37.5" y="340" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
