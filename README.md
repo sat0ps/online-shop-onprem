@@ -31,3 +31,18 @@ The edge gateway:
 
 See:
 platform/edge-nginx/
+## Performance Testing (JMeter)
+
+The platform was load-tested using Apache JMeter against the on-prem HTTPS endpoint exposed via the edge gateway.
+
+**Test details:**
+- Target: https://shop.lab/
+- Duration: 60 seconds
+- Concurrent users: 50
+- Total requests handled: **57,309**
+- Success rate: **93.45%**
+- Throughput: ~250 requests/sec
+- Failure mode under load: Socket read timeouts (expected under saturation)
+
+📊 **HTML Performance Report:**  
+https://sat0ps.github.io/online-shop-onprem/perf/jmeter/reports/report_4k_60s/index.html
