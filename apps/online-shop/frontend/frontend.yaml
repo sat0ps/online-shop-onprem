@@ -37,6 +37,8 @@ spec:
           value: "adservice:9555"
         - name: SHOPPING_ASSISTANT_SERVICE_ADDR
           value: "shoppingassistantservice:80"
+        - name: ENV_PLATFORM
+          value: "local"
 ---
 apiVersion: v1
 kind: Service
